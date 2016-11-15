@@ -10,7 +10,7 @@ namespace academicJournal
             Console.ReadKey();
         }
 
-        static public void menu()
+       static public void menu()
         {
             Console.WriteLine("1.Add teacher");
             Console.WriteLine("2.Add student");
@@ -18,8 +18,13 @@ namespace academicJournal
             Console.WriteLine("4.Show student");
             Console.WriteLine("5.Exit");
             Console.Write("Enter a desired destination: ");
-            string choise = Console.ReadLine();
-            switch (choise)
+            string a = Console.ReadLine();
+            choice(a);
+        }
+
+        static private void choice(string b)
+        {
+            switch (b)
             {
                 case "1":
                     {
